@@ -56,6 +56,28 @@ When you install new packages, update your Brewfile to keep everything in sync:
    git push
    ```
 
+## Adding Global npm Packages
+
+When you install new global npm packages, update your npm-globals.txt to keep everything in sync:
+
+1. **Install your new package:**
+   ```bash
+   npm install -g package-name
+   ```
+
+2. **Update npm-globals.txt:**
+   ```bash
+   cd ~/.dotfiles
+   echo "package-name" >> npm-globals.txt
+   ```
+
+3. **Commit the changes:**
+   ```bash
+   git add npm-globals.txt
+   git commit -m "Add package-name to global npm packages"
+   git push
+   ```
+
 ## Modifying Configurations
 
 - Edit files in `~/.dotfiles/` (they're symlinked to your home directory)
@@ -67,4 +89,5 @@ When you install new packages, update your Brewfile to keep everything in sync:
 - **Shell configuration** (`.zshrc`) with useful aliases and tool setup
 - **Git configuration** (`.gitconfig.template` and `.gitignore_global`)
 - **Homebrew package list** (`Brewfile`) for easy installation on new machines
+- **Global npm packages** (`npm-globals.txt`) for development tools
 - **Automatic backup** of existing configs during initial setup
