@@ -15,12 +15,19 @@ Personal development environment configuration files and package management.
    cd ~/.dotfiles
    ```
 
-3. **Run the install script:**
+3. **Set up Git configuration:**
+   ```bash
+   cp .gitconfig.template .gitconfig
+   git config --global user.name "Your Full Name"
+   git config --global user.email "your.email@example.com"
+   ```
+
+4. **Run the install script:**
    ```bash
    ./install.sh
    ```
 
-4. **Restart your terminal or reload your shell:**
+5. **Restart your terminal or reload your shell:**
    ```bash
    source ~/.zshrc
    ```
@@ -58,6 +65,6 @@ When you install new packages, update your Brewfile to keep everything in sync:
 ## What's Included
 
 - **Shell configuration** (`.zshrc`) with useful aliases and tool setup
-- **Git configuration** (`.gitconfig` and `.gitignore_global`)
+- **Git configuration** (`.gitconfig.template` and `.gitignore_global`)
 - **Homebrew package list** (`Brewfile`) for easy installation on new machines
 - **Automatic backup** of existing configs during initial setup
