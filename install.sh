@@ -18,3 +18,11 @@ for file in $files; do
 done
 
 echo "Dotfiles installed! Restart your terminal or run 'source ~/.zshrc'"
+
+echo "Installing Homebrew packages..."
+if [ -f "$HOME/.dotfiles/Brewfile" ]; then
+    brew bundle install --file="$HOME/.dotfiles/Brewfile"
+    echo "Packages installed!"
+else
+    echo "No Brewfile found, skipping package installation"
+fi
