@@ -1,0 +1,7 @@
+[user]
+	name = YOUR_FULL_NAME
+	email = YOUR_EMAIL_ADDRESS
+[init]
+	defaultBranch = main
+[core]
+	excludesfile = ~/.gitignore_global
