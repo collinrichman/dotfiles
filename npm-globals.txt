@@ -1,1 +1,1 @@
-@anthropic/claude-code
+@anthropic-ai/claude-code
