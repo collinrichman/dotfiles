@@ -16,7 +16,6 @@ source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # Aliases
-alias ll="exa -la"
 alias cat="bat"
 alias find="fd"
 alias grep="rg"
