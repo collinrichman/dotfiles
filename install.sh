@@ -34,3 +34,17 @@ if [ -f "$HOME/.dotfiles/npm-globals.txt" ]; then
 else
     echo "No npm-globals.txt found, skipping global npm installation"
 fi
+
+echo "Setting up VS Code configuration..."
+vscode_config_dir="$HOME/Library/Application Support/Code/User"
+if [ -d "$vscode_config_dir" ]; then
+    if [ -f "$vscode_config_dir/settings.json" ]; then
+        echo "Backing up existing VS Code settings"
+        mv "$vscode_config_dir/settings.json" "$backup_dir/"
+    fi
+    echo "Creating symlink for VS Code settings"
+    ln -sf "$HOME/.dotfiles/vscode-settings.json" "$vscode_config_dir/settings.json"
+    echo "VS Code settings configured!"
+else
+    echo "VS Code not found, skipping settings configuration"
+fi

@@ -86,8 +86,9 @@ When you install new global npm packages, update your npm-globals.txt to keep ev
 
 ## What's Included
 
-- **Shell configuration** (`.zshrc`) with useful aliases and tool setup
+- **Shell configuration** (`.zshrc`)
 - **Git configuration** (`.gitconfig.template` and `.gitignore_global`)
-- **Homebrew package list** (`Brewfile`) for easy installation on new machines
-- **Global npm packages** (`npm-globals.txt`) for development tools
+- **VS Code settings** (`vscode-settings.json`)
+- **Homebrew package list** (`Brewfile`)
+- **Global npm packages** (`npm-globals.txt`)
 - **Automatic backup** of existing configs during initial setup
