@@ -48,3 +48,11 @@ if [ -d "$vscode_config_dir" ]; then
 else
     echo "VS Code not found, skipping settings configuration"
 fi
+
+echo "Configuring macOS system settings..."
+if [ -f "$HOME/.dotfiles/mac-settings.sh" ]; then
+    bash "$HOME/.dotfiles/mac-settings.sh"
+    echo "macOS settings applied!"
+else
+    echo "No mac-settings.sh found, skipping macOS configuration"
+fi
