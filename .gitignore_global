@@ -18,3 +18,6 @@ __pycache__/
 
 # Git
 .gitconfig
+
+# Claude
+.claude/settings.local.json
